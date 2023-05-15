@@ -1,2 +1,81 @@
-body {
-    background-color: brown}
+@import url(font url);
+@font-face {
+    font-family: 'rajdhani' ;
+    src: url();
+}
+:root{ 
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color: #19587D;
+    --white-color: #ffffff;
+}
+*{ margin: 10px;
+padding:0 ;
+box-sizing: border-box;
+}
+h1 { 
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+button {
+    font-family: 'rajdhani' ;
+    font-size: 20px;
+    font-weight: 400;
+}
+.container{ 
+    width: 80%;
+    margin: 0 auto;
+}
+body{ 
+    background-color: black;
+    color: white;
+    font-family: 'Space-Grotesk';
+    font-weight: 300;
+}
+/*Design of navigation */
+nav{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;    
+}
+ul{
+    list-style: none;
+}
+nav ul a{
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+}
+
+nav ul a:hover{
+    color: var(--yellow-color);
+}
+/*Design of header hero */
+#hero {
+    background-image: url(../assets/Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587D;
+}
+/*Design of section batman-personnage */
+
+.batman-personnage{
+    display: flex;
+    justify-content:space-between ;
+}
+/*Design of section batman-nemesis */
+
+.batman-nemesis{
+    display: flex;
+    justify-content:space-between ;
+}
+/*Design of section batman-allies */
+
+.batman-allies{
+    display: flex;
+    justify-content:space-between ;
+}
