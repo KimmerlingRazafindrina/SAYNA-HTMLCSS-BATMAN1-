@@ -35,7 +35,6 @@ body{
     color: white;
     font-family: 'Space-Grotesk';
     font-weight: 300;
-    border: 1px solid white;
 }
 /*Design of navigation */
 nav{ 
@@ -159,12 +158,26 @@ nav ul a:hover{
 #multimedia .slider-content{
     padding: 0;
     background-color: rgb(151, 143, 143);
-    font color: black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 #multimedia p{
     font-size: 14px;
 }
+#multimedia button {
+    position: relative;
+    top: 350px;
+    background:none;
+    border: none;
 
+}
+#multimedia button.right {
+    right: -85%;
+
+}
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
 /*Design of section content */
 
 .content{
@@ -208,4 +221,94 @@ nav ul a:hover{
     position: fixed;
     right: 100px;
     top: 200px;
+}
+/*Design of section contact */
+#contact {
+    background-color: darkslategray;
+    padding: 70px 0;
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+#contact .titre{
+    display: block;
+}
+#contact .form input[type='Address email'], textarea {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 2px solid darkgray;
+    background-color: transparent;
+}
+#contact .icon img{ 
+    transform: rotate(90deg);
+    width: 20px;
+}
+#contact .news{
+    margin-top: 15px;
+    border-bottom: 2px solid darkgray;
+    width: 100%;
+}
+::placeholder{
+    color: #F8F184;
+    font-size: 15px;
+}
+.btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.form input[type='radio'] {
+    opacity: 0;
+}
+.btn-group label{
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid darkgrey;
+    border-image: linear-gradient(69deg, red, blue) 1;
+    font-size: 20px;
+}
+input[type='submit'] {
+    display: block;
+    width: 50%;
+    margin: 25px;
+    padding: 20px;
+    cursor: pointer;
+}
+#replique {
+    margin: 90px;
+}
+#replique .quote-item {
+    text-align: center;
+    width: 100%;
+    margin: o auto;
+}
+#replique .quote-author {
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#replique .quote-close{ 
+    float: right;
+}
+/*Design of section footer */
+footer {
+    margin-top: 200px;
+}
+footer .text-footer {
+    text-align: center;
+}
+footer .social-footer {
+    text-align: center;
+    margin-top: 50px;
 }
