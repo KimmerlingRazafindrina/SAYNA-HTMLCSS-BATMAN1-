@@ -73,7 +73,7 @@ nav ul a:hover{
 }
 /*Design of header hero */
 #hero {
-    background-image: url(../assets/Illustrations/Bathome1.png);
+    background-image: url(../Illustrations/Bathome1.png);
     height: 800px;
     background-position: top center;
     background-repeat: no-repeat;
@@ -326,4 +326,9 @@ footer .text-footer {
 footer .social-footer {
     text-align: center;
     margin-top: 50px;
+}
+@media screen and (max-width:700px){
+    body{
+        background-color: #727272;
+    }
 }
